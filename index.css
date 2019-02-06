@@ -1,0 +1,44 @@
+
+/*here i format my grid and create the classes to call in order to change my grid*/
+
+
+
+.container{
+    display: grid;
+    grid-template-areas:
+        'header section section section'
+        'aside section section section'
+        'aside section section section'
+        'aside footer footer footer';
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 100px;
+    grid-gap: 20px;
+}
+
+header{
+    grid-area: header;
+    background-color: orange;
+}
+
+section{
+    grid-area: section;
+    background-color: orange;
+}
+
+aside{
+    grid-area: aside;
+    background-color: orange;
+}
+
+footer{
+    grid-area: footer;
+    background-color: orange;
+}
+
+.blueBackground{
+    background-color: blue;
+}
+
+.redBackground{
+    background-color: red;
+}
